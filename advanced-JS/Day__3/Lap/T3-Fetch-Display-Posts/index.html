@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .main {
+        background-color: rgb(216, 216, 216);
+        padding: 20px 40px;
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        min-height: 100vh;
+      }
+
+      .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 1;
+        display: none;
+      }
+
+      .aside {
+        padding: 15px;
+        background-color: white;
+        min-width: 200px;
+        border-radius: 5px;
+      }
+
+      .list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .list__item {
+        padding: 5px 10px;
+        font-size: 18px;
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .list__item.active {
+        background-color: aqua;
+      }
+
+      .cards {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        padding: 15px 20px;
+        background-color: white;
+        border-radius: 5px;
+      }
+
+      .title {
+        margin-bottom: 10px;
+      }
+
+      .body {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <aside class="aside">
+        <ul class="list">
+          <li class="list__item active">user 1</li>
+          <li class="list__item">user 1</li>
+          <li class="list__item">user 1</li>
+          <li class="list__item">user 1</li>
+        </ul>
+      </aside>
+      <section class="cards"></section>
+    </main>
+    <div class="loading">
+      <span>Loading ...</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
