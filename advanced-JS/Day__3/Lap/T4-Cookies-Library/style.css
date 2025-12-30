@@ -1,0 +1,158 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.form {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="color"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+/* Gender selection */
+.gender-group {
+  margin: 30px 0;
+}
+
+.gender-group > label:first-child {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+.gender-options {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.gender-options > label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.gender-options > label:hover {
+  background: #f0f4f8;
+  transform: translateY(-5px);
+}
+
+.gender-options input[type="radio"] {
+  margin-bottom: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #2196f3;
+}
+
+.gender-options svg {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.gender-options > label:hover svg {
+  transform: scale(1.1);
+}
+
+/* Selected gender highlight */
+.gender-options input[type="radio"]:checked + span + div svg {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+}
+
+/* Favorite color */
+.color-picker {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.color-picker input[type="color"] {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+}
+
+.color-picker input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 15px;
+  background: #2196f3;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #1976d2;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(0);
+}

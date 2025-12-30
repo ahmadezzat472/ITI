@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="registerForm" class="form">
+      <h1>Registration Form</h1>
+
+      <label>
+        Enter your name
+        <input name="name" type="text" placeholder="Your Name" required />
+      </label>
+
+      <label>
+        Enter your age
+        <input
+          name="age"
+          type="number"
+          min="8"
+          max="100"
+          placeholder="Your Age"
+          required
+        />
+      </label>
+
+      <div class="gender-group">
+        <label>Select your Gender:</label>
+        <div class="gender-options">
+          <label>
+            <input type="radio" name="gender" value="male" checked />
+            <span>Male</span>
+            <div id="maleIcon">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="#2196f3">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M4 22c0-4 4-6 8-6s8 2 8 6"></path>
+              </svg>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female" />
+            <span>Female</span>
+            <div id="femaleIcon">
+              <svg width="120" height="120" viewBox="0 0 24 24" fill="#e91e63">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M6 21c0-4 3-6 6-6s6 2 6 6"></path>
+              </svg>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div class="color-picker">
+        <label>Favorite Color:</label>
+        <input name="color" type="color" id="color" required />
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script src="cookiesLibrary.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
