@@ -15,9 +15,10 @@ var obj = {
     for (var key in this) {
       if (typeof this[key] === "function") continue;
 
-      var _this = this;
+      var _this = this; //** use "this" here because use it inside the "self invoked function" refer to Window
 
       (function () {
+        //** "this" here refer to Window inside so will use "_this"
         var value = _this[key];
 
         Object.defineProperty(_this, key, {
