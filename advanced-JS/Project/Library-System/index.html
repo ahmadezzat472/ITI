@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <h1>Library Form</h1>
+
+      <section id="books-num-section" class="books-num">
+        <label>
+          Enter The Number Of Books
+          <input
+            name="bookNumber"
+            type="number"
+            placeholder="Num Of Books"
+            required
+          />
+          <span id="books-num-error" class="error-msg"></span>
+        </label>
+        <button class="next" id="books-num-btn" type="button">Next</button>
+      </section>
+
+      <section id="fill-data-section" class="fill-data hidden">
+        <label>
+          Enter the Book Name
+          <input name="bookName" type="text" placeholder="Book Name" required />
+        </label>
+
+        <label>
+          Enter the Price
+          <input name="price" type="number" placeholder="Book Price" required />
+        </label>
+
+        <label>
+          Enter The Author Name
+          <input
+            name="authorName"
+            type="text"
+            placeholder="Author Name"
+            required
+          />
+        </label>
+        <label>
+          Enter The Author Email
+          <input
+            name="authorEmail"
+            type="email"
+            placeholder="Author Email"
+            required
+          />
+        </label>
+        <span id="fill-data-error" class="error-msg"></span>
+
+        <button class="next" id="fill-data-btn" type="button">Next</button>
+      </section>
+
+      <table class="table-section hidden" id="table-section">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Author Name</th>
+            <th>Author Email</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </main>
+
+    <script src="constructor.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
