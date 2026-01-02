@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.player {
+  width: 700px;
+  background: #ff0000c1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.top img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.playlist div {
+  padding: 15px;
+  background: #817979;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.playlist div:hover {
+  background: #bbb;
+}
+
+.active {
+  background: #999 !important;
+  color: white;
+}

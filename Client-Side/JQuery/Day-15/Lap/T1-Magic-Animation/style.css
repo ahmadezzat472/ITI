@@ -1,0 +1,98 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+h1 {
+  color: #4b0082;
+  transition: all 0.5s ease;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.color-box {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+  background-color: #ff6b6b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+.secret-message {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #ffe066;
+  border-radius: 10px;
+  display: none;
+}
+
+.counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b0082;
+  margin: 20px;
+}
+
+.rainbow {
+  animation: rainbow 2s infinite;
+}
+
+.magic {
+  background: purple;
+  transform: rotate(360deg) scale(1.2);
+  border-radius: 50%;
+  color: yellow;
+}
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: orange;
+  }
+  40% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: green;
+  }
+  80% {
+    background-color: blue;
+  }
+  100% {
+    background-color: purple;
+  }
+}

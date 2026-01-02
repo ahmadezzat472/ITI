@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Enter Info</h1>
+    <form class="form" action="">
+      <label for="name">
+        Name:
+        <div>
+          <input type="text" id="name" name="name" placeholder="enter name" />
+          <div class="error" id="error-name"></div>
+        </div>
+      </label>
+
+      <label for="email">
+        Email:
+        <div>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="enter email"
+          />
+          <div class="error" id="error-email"></div>
+        </div>
+      </label>
+
+      <label for="age">
+        Age:
+        <div>
+          <input type="text" id="age" name="age" placeholder="enter age" />
+          <div class="error" id="error-age"></div>
+        </div>
+      </label>
+
+      <input class="button-submit" type="submit" value="Submit" />
+    </form>
+    <div class="alert"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

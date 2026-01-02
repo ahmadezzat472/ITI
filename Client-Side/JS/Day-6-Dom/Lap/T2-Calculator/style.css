@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(162, 162, 131);
+}
+
+.table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.table td.screen {
+  cursor: default;
+}
+
+.table__head {
+  background-color: #333;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+}
+
+.table th {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.table td[value="="] {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.table td[value="="]:hover {
+  background-color: #28762b;
+}
+
+.table td[value="+"],
+.table td[value="-"],
+.table td[value="*"] {
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+}
+
+.table td[value="+"]:hover,
+.table td[value="-"]:hover,
+.table td[value="*"]:hover {
+  background-color: #de861b;
+}
+
+.table td:hover {
+  background-color: #f2f2f2;
+}

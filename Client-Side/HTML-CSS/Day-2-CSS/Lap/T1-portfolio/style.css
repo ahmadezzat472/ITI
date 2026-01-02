@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.land-section {
+  background-image: url("assets/header.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+}
+
+.land-section__title {
+  line-height: 30vh;
+  margin: 0;
+}
+
+.main {
+  background-color: lightgray;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.about {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.projects_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projects_table thead {
+  background-color: rgb(13, 105, 144);
+  color: white;
+}
+
+.projects_table th,
+.projects_table td {
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(13, 105, 144);
+  padding: 10px;
+  border-radius: 5px;
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+
+.footer {
+  background-color: rgb(37, 6, 6);
+  padding: 10px;
+}
+
+.footer__text {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}

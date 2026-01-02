@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Audio Player</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="player">
+      <div class="top">
+        <img
+          id="cover"
+          src="https://tse3.mm.bing.net/th/id/OIP.wIpQbcgDRjcgzzah7wQ1ewHaIx?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+        />
+
+        <div>
+          <div class="controls">
+            <button onclick="playMusic()">play</button>
+            <button onclick="pauseMusic()">pause</button>
+            <button onclick="stopMusic()">stop</button>
+          </div>
+
+          <br />
+
+          <input
+            id="progress"
+            type="range"
+            value="0"
+            min="0"
+            max="100"
+            style="width: 200px"
+          />
+
+          <br /><br />
+
+          <input
+            id="volume"
+            type="range"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <div class="playlist">
+        <div onclick="loadTrack(0)">Super Mario</div>
+        <div onclick="loadTrack(1)">Lose you to find me</div>
+        <div onclick="loadTrack(2)">Bad Guy</div>
+        <div onclick="loadTrack(3)">Mel Bedaya</div>
+      </div>
+    </div>
+
+    <script>
+      const audioFiles = [
+        "./Super Mario Bros (NES) Music - Overworld Theme.mp3",
+        "./Super Mario Bros (NES) Music - Overworld Theme.mp3",
+        "./Super Mario Bros (NES) Music - Overworld Theme.mp3",
+        "./Super Mario Bros (NES) Music - Overworld Theme.mp3",
+      ];
+
+      let audio = new Audio();
+      let current = 0;
+
+      // Load default
+      loadTrack(0);
+
+      // functions
+      function loadTrack(i) {
+        current = i;
+        audio.src = audioFiles[i];
+        highlight();
+      }
+
+      function playMusic() {
+        audio.play();
+      }
+
+      function pauseMusic() {
+        audio.pause();
+      }
+
+      function stopMusic() {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+
+      // volume
+      document.getElementById("volume").oninput = function () {
+        audio.volume = this.value;
+      };
+
+      // progress update
+      audio.ontimeupdate = function () {
+        let p = (audio.currentTime / audio.duration) * 100;
+        document.getElementById("progress").value = p;
+      };
+
+      // changing progress
+      document.getElementById("progress").onchange = function () {
+        audio.currentTime = audio.duration * (this.value / 100);
+      };
+
+      // playlist highlight
+      function highlight() {
+        document.querySelectorAll(".playlist div").forEach((d, index) => {
+          d.classList.remove("active");
+          if (index == current) d.classList.add("active");
+        });
+      }
+    </script>
+  </body>
+</html>
