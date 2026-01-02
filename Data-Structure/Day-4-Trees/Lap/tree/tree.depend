@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1764109471 source:c:\users\maztechs\desktop\iti\data structure\day__4\lab\tree\main.cpp
+	<iostream>
+	"Employee.h"
+	"Tree.h"
+
+1764109480 c:\users\maztechs\desktop\iti\data structure\day__4\lab\tree\employee.h
+	<cstdlib>
+	<ctime>
+
+1764109471 c:\users\maztechs\desktop\iti\data structure\day__4\lab\tree\tree.h
+	"Employee.h"
+

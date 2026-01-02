@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1763591522 source:c:\users\maztechs\desktop\iti\data structure\day__2\linkedlist\main.cpp
+	<iostream>
+	"Employee.h"
+	"LinkedList.h"
+	"CircularLinkedList.h"
+
+1763586236 c:\users\maztechs\desktop\iti\data structure\day__2\linkedlist\employee.h
+	<string>
+
+1763591876 c:\users\maztechs\desktop\iti\data structure\day__2\linkedlist\linkedlist.h
+	"Employee.h"
+
+1763592373 c:\users\maztechs\desktop\iti\data structure\day__2\linkedlist\circularlinkedlist.h
+	"Employee.h"
+

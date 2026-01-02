@@ -1,14 +1,18 @@
-# Video files
+# Videos
 *.mp4
 *.mkv
 *.avi
 *.mov
-*.webm
+*.wmv
 *.flv
+*.webm
 **/videos/
+**/Rec/
 
-# Zip files
+# Archives
 *.zip
+*.rar
+*.7z
 
 # Database backups
 *.bak

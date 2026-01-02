@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1763642116 source:c:\users\maztechs\desktop\iti\data structure\day__2\lab\linkedlist_stack\main.cpp
+	"Stack.h"
+	<iostream>
+
+1763642116 c:\users\maztechs\desktop\iti\data structure\day__2\lab\linkedlist_stack\stack.h
+	"LinkedList.h"
+
+1763642116 c:\users\maztechs\desktop\iti\data structure\day__2\lab\linkedlist_stack\linkedlist.h
+	"Employee.h"
+
+1763636409 c:\users\maztechs\desktop\iti\data structure\day__2\lab\linkedlist_stack\employee.h
+	<string>
+
+1763642206 source:c:\users\maztechs\desktop\iti\data structure\day__3\lab\linkedlist_stack\main.cpp
+	"Stack.h"
+	"Employee.h"
+	<iostream>
+
+1763642116 c:\users\maztechs\desktop\iti\data structure\day__3\lab\linkedlist_stack\stack.h
+	"LinkedList.h"
+
+1763642116 c:\users\maztechs\desktop\iti\data structure\day__3\lab\linkedlist_stack\linkedlist.h
+	"Employee.h"
+
+1763636409 c:\users\maztechs\desktop\iti\data structure\day__3\lab\linkedlist_stack\employee.h
+	<string>
+
