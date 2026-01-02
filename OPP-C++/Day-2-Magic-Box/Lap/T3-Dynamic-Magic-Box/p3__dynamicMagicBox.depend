@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1762172341 source:c:\users\maztechs\desktop\iti\c++\day__2\p3__dynamicmagicbox\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+

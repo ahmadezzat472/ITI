@@ -1,0 +1,14 @@
+# Video files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+*.flv
+**/videos/
+
+# Zip files
+*.zip
+
+# Database backups
+*.bak

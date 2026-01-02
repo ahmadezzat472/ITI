@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1763291285 source:c:\users\maztechs\desktop\iti\c++ & oop\day__9\lab\pictures\main.cpp
+	<iostream>
+	"graphics.h"
+
+1762937993 c:\users\maztechs\desktop\iti\c++ & oop\day__9\lab\pictures\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
+1763291285 source:c:\users\maztechs\desktop\iti\done\c++ & oop\day__9\lab\pictures\main.cpp
+	<iostream>
+	"graphics.h"
+
+1762937993 c:\users\maztechs\desktop\iti\done\c++ & oop\day__9\lab\pictures\graphics.h
+	<iostream>
+	<math.h>
+	<windows.h>
+	<Windows.h>
+
