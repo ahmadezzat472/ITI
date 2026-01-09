@@ -1,10 +1,4 @@
-interface Student {
-  id: number;
-  name: string;
-  email?: string;
-  isActive: boolean;
-  grades: number[];
-}
+import type { Student } from "./models/student";
 
 let studentArr: Student[] = [];
 
@@ -30,3 +24,15 @@ function getStatus(grade: number): string {
     return "Average";
   }
 }
+
+addStudent({
+  id: 1,
+  name: "ahmed",
+  grades: [20, 50, 90],
+  isActive: true,
+  email: "ahmed@.com",
+});
+
+console.log(studentArr);
+console.log(calcAvgGarde(studentArr[0] ? studentArr[0].grades : [20, 50, 90]));
+console.log(getStatus(100));
