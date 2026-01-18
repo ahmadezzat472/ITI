@@ -1,0 +1,12 @@
+<section class="text-center mb-20">
+  <input
+    class="py-1 px-2 border-2 border-blue-400 rounded-lg placeholder:text-blue-400 text-blue-700 text-md font-semibold focus:outline-none"
+    type="text"
+    placeholder="User Name"
+    (input)="userName = $event.target.value"
+  />
+  <div>
+    User Name: <span class="text-blue-800">{{ userName }}</span>
+  </div>
+  <input type="button" (click)="clearname()" value="Clear" />
+</section>
