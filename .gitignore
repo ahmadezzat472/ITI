@@ -16,3 +16,11 @@
 
 # Database backups
 *.bak
+
+node_modules/
+
+# Build outputs
+build/
+dist/
+.next/
+out/
