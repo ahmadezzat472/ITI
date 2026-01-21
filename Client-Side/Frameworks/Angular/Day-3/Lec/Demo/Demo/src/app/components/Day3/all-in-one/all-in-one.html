@@ -1,0 +1,29 @@
+<div class="form">
+  <h3>Registeration</h3>
+  <input [(ngModel)]="stdName" type="text" placeholder="Enter Name">
+  <input [(ngModel)]="stdAge" type="number" placeholder="Enter Age">
+  <button (click)="AddStudent()">ADD</button>
+</div>
+<h3>Students</h3>
+<div>
+  <table border="1px" class="table">
+    <thead>
+      <th>Name</th>
+      <th>Age</th>
+    </thead>
+    <tbody>
+      <!-- Built-In Directive -->
+      <!-- <tr *ngFor="let student of studentArray">
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+      </tr> -->
+      <!-- control Flow -->
+      @for (student of studentArray; track $index) {
+        <tr>
+          <td>{{student.name}}</td>
+          <td>{{student.age}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

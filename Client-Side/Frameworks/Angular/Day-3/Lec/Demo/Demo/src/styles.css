@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+/* p{
+  color:red;
+  text-align: center;
+  border: 1px solid blue;
+} */
+
+div{
+  border: 1px solid black;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 15px;
+  padding: 5px;
+}

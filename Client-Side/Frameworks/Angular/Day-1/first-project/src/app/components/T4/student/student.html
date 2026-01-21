@@ -1,0 +1,30 @@
+<div class="bg-gray-100 flex items-center justify-center p-6">
+  <div class="w-full max-w-2xl bg-white rounded-2xl shadow-lg p-6">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">Students List</h2>
+
+    <table class="w-full border-collapse rounded-xl overflow-hidden">
+      <thead>
+        <tr class="bg-blue-600 text-white text-left">
+          <th class="px-4 py-3">Name</th>
+          <th class="px-4 py-3">Age</th>
+        </tr>
+      </thead>
+
+      <!-- *ngFor="let student of students" -->
+      <tbody>
+        @for (student of students; track $index) {
+          <tr class="border-b last:border-none hover:bg-gray-50 transition">
+            <td class="px-4 py-3 text-gray-700 font-medium">
+              {{ student.name }}
+            </td>
+            <td class="px-4 py-3 text-gray-600">
+              {{ student.age }}
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+
+    <!-- <p *ngIf="students.length === 0" class="text-center text-gray-500 mt-4">No data yet</p> -->
+  </div>
+</div>

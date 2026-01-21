@@ -1,0 +1,5 @@
+1- concept logic [data] --> XXX
+2- Validation [Built-in Directives vs control Flow]
+3- Component Interaction
+
+4- setInterval [time] setTimeout- fetch - ngZone ---> signals
