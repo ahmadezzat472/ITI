@@ -1,0 +1,4 @@
+1- Validation [Built-in Directives vs control Flow]
+2-Concept [Component Interaction] ===> Problem ==> solve [Component Life Cycle]
+3-Routing
+4-Validators

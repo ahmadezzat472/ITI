@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+      <th>Name</th>
+      <th>Age</th>
+    </thead>
+    <tbody>
+      @for (student of allStudents; track student?.name) {
+        <tr>
+          <td>{{student?.name}}</td>
+          <td>{{student?.age}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>

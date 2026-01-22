@@ -1,0 +1,42 @@
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.form *{
+  border-radius: 15px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.form button{
+  background-color: #09c;
+  color: white;
+  width: 30%;
+}
+
+.form button:active{
+  background-color: rgb(1, 113, 150);
+  transform: scale(0.9);
+}
+
+.table{
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.table th{
+  background-color: #09c;
+  color: white;
+}
+
+h3{
+  text-align: center;
+}
