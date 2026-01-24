@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com"
+    }
+  ],
+
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "Accessories"
+    },
+    {
+      "id": 3,
+      "name": "Home Appliances"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 999.99,
+      "img": "laptop.png",
+      "description": "High performance laptop suitable for work and gaming",
+      "categoryId": 1,
+      "stock": 10
+    },
+    {
+      "id": 2,
+      "name": "Wireless Mouse",
+      "price": 25.5,
+      "img": "mouse.png",
+      "description": "Ergonomic wireless mouse",
+      "categoryId": 2,
+      "stock": 50
+    }
+  ]
+}

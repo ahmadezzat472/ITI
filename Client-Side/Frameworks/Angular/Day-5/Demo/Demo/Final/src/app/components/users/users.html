@@ -1,0 +1,4 @@
+@for (user of users(); track user.id) {
+  <!-- Component Interaction [From Parent To Child] -->
+  <app-user [myUser]="user"></app-user>
+}

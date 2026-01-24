@@ -1,0 +1,32 @@
+<!-- <p>Hello This Is First Component</p> -->
+<!-- Interpolition [from TS to HTML] -->
+<!-- <p>UserName: {{userName}}</p> -->
+<!-- <input value="Ahmed">
+<input value="{{userName}}"> -->
+
+<!-- One Way Binding [from TS to HTML] -->
+<!-- <input [value]="userName"> -->
+<!-- <input class="mine" [value]="userName">
+<input [class]="myClass" [value]="userName">
+<br/> -->
+<!-- Binding Events -->
+<!-- <input type="button" value="change Name" (click)="chgName()"> -->
+<!-- <input type="button" value="change Name" (click)="chgName()">
+
+<br/>
+<img src="/images/1.jpg">
+<img [src]="imgSrc" (mouseover)="chgPic1()" (mouseleave)="chgPic2()"> -->
+
+<!-- two way binding [from HTML to TS] [from TS to HTML] -->
+<!-- (1) By US -->
+<input (input)="getData($event)" value="" placeholder="Enter First Name">
+<p>First Name: {{fName}}</p>
+
+
+<!-- (2) By Angular ==> imports: [FormsModule] -->
+<input [(ngModel)]="lName" placeholder="Enter Last Name">
+<p>Last Name: {{lName}}</p>
+
+
+<input [(ngModel)]="age" placeholder="Enter Age">
+<p>Last Name: {{age}}</p>

@@ -1,0 +1,14 @@
+/* p{
+  color:red;
+  text-align: center;
+  border: 1px solid blue;
+} */
+
+/* p{
+  color: orange;
+} */
+
+.active{
+  color: red;
+  background-color: yellow;
+}

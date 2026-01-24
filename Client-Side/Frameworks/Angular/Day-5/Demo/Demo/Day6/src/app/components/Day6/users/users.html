@@ -1,0 +1,6 @@
+@for (user of users; track user.id) {
+  <div class="alert alert-primary">
+    <p>Name: {{user.name}}</p>
+    <p>Email: <a routerLink="/users/{{user.id}}">{{user.email}}</a></p>
+  </div>
+}
