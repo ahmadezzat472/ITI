@@ -1,1 +1,375 @@
-<p>list works!</p>
+<!-- Table Card -->
+<div class="card overflow-hidden">
+  <!-- Table Container with Horizontal Scroll -->
+  <div class="overflow-x-auto scrollbar-custom">
+    <table class="w-full min-w-full">
+      <!-- Table Header -->
+      <thead class="bg-surface-tertiary">
+        <tr>
+          <th class="px-6 py-4 text-left">
+            <input
+              type="checkbox"
+              class="size-4 rounded border-border-primary bg-surface-primary text-primary-600 focus:ring-2 focus:ring-primary-500 focus:ring-offset-0"
+            />
+          </th>
+          <th
+            class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Product
+          </th>
+          <th
+            class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Category
+          </th>
+          <th
+            class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Price
+          </th>
+          <th
+            class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Stock
+          </th>
+          <th
+            class="px-6 py-4 text-left text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Status
+          </th>
+          <th
+            class="px-6 py-4 text-right text-xs font-semibold uppercase tracking-wider text-neutral-300"
+          >
+            Actions
+          </th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody class="divide-y divide-border-secondary">
+        <!-- Product Row 1 -->
+        <tr class="transition-colors hover:bg-surface-tertiary/50">
+          <td class="px-6 py-4">
+            <input
+              type="checkbox"
+              class="size-4 rounded border-border-primary bg-surface-primary text-primary-600 focus:ring-2 focus:ring-primary-500 focus:ring-offset-0"
+            />
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 shrink-0 overflow-hidden rounded-lg bg-surface-tertiary ring-1 ring-border-primary"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=100&fit=crop"
+                  alt="Product"
+                  class="size-full object-cover"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="truncate text-sm font-medium text-white">Wireless Headphones</p>
+                <p class="truncate text-xs text-neutral-400">SKU: WH-2024-001</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">Electronics</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm font-medium text-white">$299.00</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">142</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="badge-success">In Stock</span>
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center justify-end gap-2">
+              <button class="btn-ghost p-2!" title="View">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </button>
+              <button class="btn-ghost p-2!" title="Edit">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn-ghost p-2! hover:bg-danger-500/10! hover:text-danger-400!"
+                title="Delete"
+              >
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Product Row 2 -->
+        <tr class="transition-colors hover:bg-surface-tertiary/50">
+          <td class="px-6 py-4">
+            <input
+              type="checkbox"
+              class="size-4 rounded border-border-primary bg-surface-primary text-primary-600 focus:ring-2 focus:ring-primary-500 focus:ring-offset-0"
+            />
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 shrink-0 overflow-hidden rounded-lg bg-surface-tertiary ring-1 ring-border-primary"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=100&h=100&fit=crop"
+                  alt="Product"
+                  class="size-full object-cover"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="truncate text-sm font-medium text-white">Running Shoes</p>
+                <p class="truncate text-xs text-neutral-400">SKU: RS-2024-042</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">Footwear</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm font-medium text-white">$129.99</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">78</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="badge-success">In Stock</span>
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center justify-end gap-2">
+              <button class="btn-ghost p-2!" title="View">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </button>
+              <button class="btn-ghost p-2!" title="Edit">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn-ghost p-2! hover:bg-danger-500/10! hover:text-danger-400!"
+                title="Delete"
+              >
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+
+        <!-- Product Row 3 -->
+        <tr class="transition-colors hover:bg-surface-tertiary/50">
+          <td class="px-6 py-4">
+            <input
+              type="checkbox"
+              class="size-4 rounded border-border-primary bg-surface-primary text-primary-600 focus:ring-2 focus:ring-primary-500 focus:ring-offset-0"
+            />
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 shrink-0 overflow-hidden rounded-lg bg-surface-tertiary ring-1 ring-border-primary"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=100&h=100&fit=crop"
+                  alt="Product"
+                  class="size-full object-cover"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="truncate text-sm font-medium text-white">Smart Watch</p>
+                <p class="truncate text-xs text-neutral-400">SKU: SW-2024-089</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">Electronics</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm font-medium text-white">$399.00</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-warning-400">8</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="badge-warning">Low Stock</span>
+          </td>
+        </tr>
+
+        <!-- Product Row 4 -->
+        <tr class="transition-colors hover:bg-surface-tertiary/50">
+          <td class="px-6 py-4">
+            <input
+              type="checkbox"
+              class="size-4 rounded border-border-primary bg-surface-primary text-primary-600 focus:ring-2 focus:ring-primary-500 focus:ring-offset-0"
+            />
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-10 shrink-0 overflow-hidden rounded-lg bg-surface-tertiary ring-1 ring-border-primary"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=100&h=100&fit=crop"
+                  alt="Product"
+                  class="size-full object-cover"
+                />
+              </div>
+              <div class="min-w-0 flex-1">
+                <p class="truncate text-sm font-medium text-white">Designer Sunglasses</p>
+                <p class="truncate text-xs text-neutral-400">SKU: DS-2024-156</p>
+              </div>
+            </div>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-neutral-300">Accessories</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm font-medium text-white">$189.00</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="text-sm text-danger-400">0</span>
+          </td>
+          <td class="px-6 py-4">
+            <span class="badge-danger">Out of Stock</span>
+          </td>
+          <td class="px-6 py-4">
+            <div class="flex items-center justify-end gap-2">
+              <button class="btn-ghost p-2!" title="View">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                  />
+                </svg>
+              </button>
+              <button class="btn-ghost p-2!" title="Edit">
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="btn-ghost p-2! hover:bg-danger-500/10! hover:text-danger-400!"
+                title="Delete"
+              >
+                <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Table Footer / Pagination -->
+  <div class="border-t border-border-secondary bg-surface-primary px-6 py-4">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="text-sm text-neutral-400">
+        Showing <span class="font-medium text-white">1</span> to
+        <span class="font-medium text-white">4</span> of
+        <span class="font-medium text-white">47</span> products
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="btn-outline px-3! py-2!" disabled>
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+        <button class="btn-primary px-3! py-2!">1</button>
+        <button class="btn-outline px-3! py-2!">2</button>
+        <button class="btn-outline px-3! py-2!">3</button>
+        <span class="px-2 text-neutral-400">...</span>
+        <button class="btn-outline px-3! py-2!">12</button>
+        <button class="btn-outline px-3! py-2!">
+          <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
