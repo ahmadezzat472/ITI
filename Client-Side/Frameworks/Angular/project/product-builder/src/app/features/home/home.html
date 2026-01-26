@@ -7,8 +7,18 @@
           <h1 class="text-3xl font-bold text-white">Products</h1>
           <p class="mt-1 text-sm text-neutral-400">Manage your product inventory</p>
         </div>
-        <app-modal></app-modal>
-        <!-- <app-create-product></app-create-product> -->
+
+        <button command="show-modal" commandfor="create-product-modal" class="btn-primary">
+          <svg class="mr-2 size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m8-8H4"
+            />
+          </svg>
+          Add Product
+        </button>
       </div>
     </div>
 
@@ -61,9 +71,31 @@
       </div>
     </div>
 
-    <!-- Table Card -->
-    <app-products-list></app-products-list>
-
-    <app-modal></app-modal>
+    <!-- Products List -->
+    <app-products-list [products]="products"></app-products-list>
   </div>
 </div>
+
+<app-modal
+  modalId="create-product-modal"
+  title="Add New Product"
+  subtitle="Fill in the product details below"
+  icon="success"
+  size="lg"
+  confirmText="Add Product"
+  [isLoading]="isCreating()"
+  (confirm)="createProductComponent.onSubmit()"
+  (cancel)="onCancelCreate()"
+  [ConfirmButtonDisabled]="
+    createProductComponent
+      ? createProductComponent.productForm
+        ? createProductComponent.productForm.invalid
+        : false
+      : false
+  "
+>
+  <app-create-product
+    (formSubmit)="onCreateProduct($event)"
+    (formReset)="resetForm()"
+  ></app-create-product>
+</app-modal>

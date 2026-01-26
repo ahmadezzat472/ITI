@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, input, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,6 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './button.css',
 })
 export class Button {
+  @Input() title: string = 'Button';
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
   @Input() disabled: boolean = false;
   @Input() loading: boolean = false;
@@ -14,6 +15,9 @@ export class Button {
     'primary';
   @Input() size: 'sm' | 'md' | 'lg' = 'md';
   @Input() fullWidth: boolean = false;
+
+  @Input() command: string = 'show-modal';
+  @Input() commandFor: string = '';
 
   @Output() buttonClick = new EventEmitter<MouseEvent>();
 

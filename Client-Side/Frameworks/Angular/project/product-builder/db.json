@@ -6,7 +6,6 @@
       "email": "alice@example.com"
     }
   ],
-
   "categories": [
     {
       "id": 1,
@@ -21,13 +20,12 @@
       "name": "Home Appliances"
     }
   ],
-
   "products": [
     {
       "id": 1,
       "name": "Laptop",
       "price": 999.99,
-      "img": "laptop.png",
+      "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=100&fit=crop",
       "description": "High performance laptop suitable for work and gaming",
       "categoryId": 1,
       "stock": 10
@@ -36,10 +34,28 @@
       "id": 2,
       "name": "Wireless Mouse",
       "price": 25.5,
-      "img": "mouse.png",
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=100&h=100&fit=crop",
       "description": "Ergonomic wireless mouse",
       "categoryId": 2,
       "stock": 50
+    },
+    {
+      "id": "ee3d",
+      "name": "klio",
+      "categoryId": "2",
+      "price": 0.18,
+      "stock": 3,
+      "description": "ss",
+      "img": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=100&h=100&fit=crop"
+    },
+    {
+      "id": "1e1c",
+      "name": "ahme",
+      "categoryId": "1",
+      "price": 0.01,
+      "stock": 0,
+      "description": "dsf",
+      "img": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=100&h=100&fit=crop"
     }
   ]
 }

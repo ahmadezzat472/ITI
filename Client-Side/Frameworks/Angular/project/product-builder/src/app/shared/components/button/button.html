@@ -2,7 +2,10 @@
   [type]="type"
   [disabled]="disabled || loading"
   [class]="buttonClasses"
+  [title]="title"
   (click)="handleClick($event)"
+  [attr.command]="command"
+  [attr.commandfor]="commandFor"
 >
   <!-- Loading Spinner -->
   @if (loading) {
