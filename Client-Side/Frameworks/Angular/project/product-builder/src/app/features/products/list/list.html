@@ -38,7 +38,7 @@
 
       <!-- Table Body -->
       <tbody class="divide-y divide-border-secondary">
-        @for (product of products(); track $index) {
+        @for (product of products(); track product.id) {
           <tr class="transition-colors text-center hover:bg-surface-tertiary/50">
             <td class="px-6 py-3">
               <input
@@ -65,7 +65,7 @@
               <p class="truncate text-sm font-medium text-white">{{ product.name }}</p>
             </td>
             <td class="px-6 py-3">
-              <span class="text-sm text-neutral-300">Electronics</span>
+              <span class="text-sm text-neutral-300">{{ product.categoryId }}</span>
             </td>
             <td class="px-6 py-3">
               <span class="text-sm font-medium text-white">$299.00</span>
@@ -96,7 +96,14 @@
                     />
                   </svg>
                 </app-button>
-                <app-button size="sm" variant="ghost" title="Edit">
+                <app-button
+                  command="show-modal"
+                  commandFor="update-product-modal"
+                  size="sm"
+                  variant="ghost"
+                  title="Update"
+                  (click)="selectProduct(product)"
+                >
                   <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
                       stroke-linecap="round"
@@ -112,6 +119,7 @@
                   size="sm"
                   variant="danger"
                   title="Delete"
+                  (click)="selectProduct(product)"
                 >
                   <svg class="size-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path
@@ -122,6 +130,25 @@
                     />
                   </svg>
                 </app-button>
+              </div>
+            </td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="8" class="h-60">
+              <div class="flex h-full flex-col items-center justify-center text-center">
+                <mat-icon
+                  class="text-neutral-400"
+                  style="font-size: 64px; height: 64px; width: 64px"
+                >
+                  inventory_2
+                </mat-icon>
+
+                <h3 class="mt-4 text-lg font-semibold text-white">No products found</h3>
+
+                <p class="mt-1 text-sm text-neutral-400">
+                  Start by adding a new product to your inventory
+                </p>
               </div>
             </td>
           </tr>
@@ -173,9 +200,38 @@
   modalId="delete-product-modal"
   title="delete Product"
   subtitle="Fill in the product details below"
-  icon="success"
-  size="lg"
-  confirmText="Add Product"
+  icon="danger"
+  size="md"
+  confirmText="Delete Product"
+  (confirm)="onDeleteProduct()"
 >
-  ssss
+  <div class="flex flex-col items-center gap-4 py-4 text-center">
+    <mat-icon class="text-red-500" style="font-size: 56px; width: 56px; height: 56px">
+      warning
+    </mat-icon>
+
+    <h3 class="text-lg font-semibold text-white">Are you sure you want to delete this product?</h3>
+
+    <p class="text-sm text-neutral-400">
+      This product will be permanently removed from your inventory.
+      <br />
+      You won’t be able to recover it later.
+    </p>
+  </div>
+</app-modal>
+
+<app-modal
+  modalId="update-product-modal"
+  title="update Product"
+  subtitle="Fill in the product details below"
+  icon="warning"
+  size="lg"
+  [isLoading]="isUpdating()"
+  (confirm)="updateProductComponent.onSubmit()"
+  (cancel)="onCancelUpdate()"
+>
+  <app-update-product
+    [productData]="selectedProduct!"
+    (formSubmit)="onUpdateProduct($event)"
+  ></app-update-product>
 </app-modal>

@@ -8,7 +8,13 @@
           <p class="mt-1 text-sm text-neutral-400">Manage your product inventory</p>
         </div>
 
-        <button command="show-modal" commandfor="create-product-modal" class="btn-primary">
+        <app-button
+          command="show-modal"
+          commandFor="create-product-modal"
+          size="md"
+          variant="primary"
+          title="Add"
+        >
           <svg class="mr-2 size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path
               stroke-linecap="round"
@@ -18,7 +24,7 @@
             />
           </svg>
           Add Product
-        </button>
+        </app-button>
       </div>
     </div>
 
@@ -72,7 +78,7 @@
     </div>
 
     <!-- Products List -->
-    <app-products-list [products]="products"></app-products-list>
+    <app-products-list (loadProducts)="loadProducts()" [products]="products"></app-products-list>
   </div>
 </div>
 

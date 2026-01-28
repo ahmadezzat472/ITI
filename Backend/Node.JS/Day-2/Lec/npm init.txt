@@ -1,0 +1,109 @@
+npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (lap) npm warn init canceled
+
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npm init -y
+Wrote to D:\ITI\tech\Backend\Node\Lap\package.json:
+
+{
+  "name": "lap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npm i express
+
+added 65 packages, and audited 66 packages in 3s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npm i -D typescript ts-node-dev @types/node @types/express
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+
+added 70 packages, and audited 136 packages in 10s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+added 70 packages, and audited 136 packages in 10s
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+30 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+found 0 vulnerabilities
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+Created a new tsconfig.json                                                                                             
+Maztechs@Ahmed-Ezzat MINGW64 /d/ITI/tech/Backend/Node/Lap (main)
+$ npx tsc --init
+
+Created a new tsconfig.json                                                                                             
+                                                                                                                     TS 
+
+Created a new tsconfig.json                                                                                             
+                                                                                                                     TS 
+Created a new tsconfig.json                                                                                             
+                                                                                                                     TS 
+You can learn more at https://aka.ms/tsconfig
+                                                                                                                     TS 
+You can learn more at https://aka.ms/tsconfig
+You can learn more at https://aka.ms/tsconfig

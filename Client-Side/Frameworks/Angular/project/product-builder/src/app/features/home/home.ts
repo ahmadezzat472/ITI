@@ -4,10 +4,11 @@ import { Modal } from '../../shared/components/modal/modal';
 import { CreateProduct } from '../products/create/create';
 import { ProductService } from '../../services/product';
 import { CreateProductDto, Product } from '../../interface/product';
+import { Button } from '../../shared/components/button/button';
 
 @Component({
   selector: 'app-home',
-  imports: [ProductsList, Modal, CreateProduct],
+  imports: [ProductsList, Modal, CreateProduct, Button],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -46,10 +47,7 @@ export class Home implements OnInit {
       next: (product) => {
         console.log('Product created:', product);
         this.isCreating.set(false);
-
         this.loadProducts();
-
-        // Reset form and close modal
         this.resetForm();
         this.closeModal('create-product-modal');
       },
