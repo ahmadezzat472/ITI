@@ -1,23 +1,55 @@
 import { Request, Response, NextFunction } from "express";
+import UserService from "../services/user.service";
 
 class UsersController {
-  static getAllUsers(req: Request, res: Response, next: NextFunction) {
-    return res.status(200).json({ message: "get all users" });
+  static async getAllUsers(req: Request, res: Response, next: NextFunction) {
+    const users = await UserService.getAllUsers();
+    return res
+      .status(200)
+      .json({ message: "Users fetched successfully", data: users });
   }
 
-  static getUserById(req: Request, res: Response, next: NextFunction) {
-    return res.status(200).json({ message: "get user with id" });
+  static async getUserById(req: Request, res: Response, next: NextFunction) {
+    const user = await UserService.getUserById(req.params.id as string);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    return res
+      .status(200)
+      .json({ message: "User fetched successfully", data: user });
   }
 
-  static createUser(req: Request, res: Response, next: NextFunction) {
-    return res.status(201).json({ message: "create a new user" });
+  static async createUser(req: Request, res: Response, next: NextFunction) {
+    const user = await UserService.createUser(req.body);
+    return res
+      .status(201)
+      .json({ message: "User created successfully", data: user });
   }
 
-  static updateUser(req: Request, res: Response, next: NextFunction) {
-    return res.status(200).json({ message: "update user with id" });
+  static async updateUser(req: Request, res: Response, next: NextFunction) {
+    const user = await UserService.updateUser(
+      req.params.id as string,
+      req.body,
+    );
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    return res
+      .status(200)
+      .json({ message: "User updated successfully", data: user });
   }
 
-  static deleteUser(req: Request, res: Response, next: NextFunction) {
+  static async deleteUser(req: Request, res: Response, next: NextFunction) {
+    const user = await UserService.deleteUser(req.params.id as string);
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
     return res.status(200).json({ message: "delete user with id" });
   }
 }
