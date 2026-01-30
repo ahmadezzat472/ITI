@@ -1,4 +1,4 @@
-"# ITI (Information Technology Institute)
+# ITI (Information Technology Institute)
 
 This repository contains course materials, projects, and assignments from the Information Technology Institute (ITI) training program.
 
@@ -71,4 +71,4 @@ This is a personal learning repository. Feel free to explore and learn from the 
 
 ## 📝 License
 
-This repository is for educational purposes." 
+This repository is for educational purposes.
