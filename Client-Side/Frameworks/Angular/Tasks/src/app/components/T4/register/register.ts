@@ -10,7 +10,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 export class Register {
   registerForm = new FormGroup({
     name: new FormControl('', Validators.required),
-    age: new FormControl(0, [Validators.max(30), Validators.min(20), Validators.required]),
+    age: new FormControl(0, [{validators: Validators.max(30), message: 'Age must be at most 30'}, Validators.min(20), Validators.required]),
   });
 
   @Output() submitStudent = new EventEmitter<{ name: string; age: number }>();
